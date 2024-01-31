@@ -3,7 +3,7 @@ const containerVideos = document.querySelector(".videos__container");
 
 async function buscarEMostrarVideos(){
     try{
-        const busca = await fetch("https://joao-carmassi.github.io/vidflow/backend/videos.json");
+        const busca = await fetch("https://joao-carmassi.github.io/projeto-vidflow-main/backend/videos.json");
         const arrayVideos = await busca.json();
         const videos = arrayVideos.videos
         console.log(videos)
